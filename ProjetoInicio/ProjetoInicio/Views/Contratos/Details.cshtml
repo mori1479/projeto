@@ -1,0 +1,82 @@
+﻿@model ProjetoInicio.Models.Contrato
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Contrato</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Proprietario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Proprietario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Inquilino)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Inquilino)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.InicioPeriodoVigencia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.InicioPeriodoVigencia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FimPeriodoVigencia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FimPeriodoVigencia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Preco)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Preco)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.observacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.observacao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DiaPagamento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DiaPagamento)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

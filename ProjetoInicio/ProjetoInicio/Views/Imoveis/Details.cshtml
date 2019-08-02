@@ -1,0 +1,74 @@
+﻿@model ProjetoInicio.Models.Imovel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Imovel</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Preco)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Preco)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Tamanho)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Tamanho)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FimInatividade)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FimInatividade)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.InicioInatividade)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.InicioInatividade)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Image)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Image)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

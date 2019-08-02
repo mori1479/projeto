@@ -1,0 +1,88 @@
+﻿@model ProjetoInicio.Models.Contrato
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Contrato</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Proprietario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Proprietario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Inquilino)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Inquilino)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.InicioPeriodoVigencia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.InicioPeriodoVigencia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FimPeriodoVigencia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FimPeriodoVigencia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Preco)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Preco)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.observacao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.observacao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DiaPagamento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DiaPagamento)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
